@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.5)50%,rgba(0 , 0, 0, 0.5)50%),url(calc.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+.calculator{
+    position: relative;
+    display:grid;
+}
+.calculator .value{
+    grid-column: span 4;
+    height: 100px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+}
+.calculator span{
+    display: grid;
+    width: 62px;
+    height: 60px;
+    color: #fff;
+    background: #0c2835;
+    place-items: center;
+    border: 1px solid rgba(0 , 0, 0, 0.1);
+}
+.calculator span:active
+{
+    background: #ff6600;
+    color: #fff;
+}
+.calculator span.clear{
+    grid-column: span 2;
+    width: 124px;
+    background: #ff0000;
+}
+.calculator span.plus{
+    grid-row: span 2;
+    height: 120px;
+}
+.calculator span.equal{
+    background: #00cc00;
+    border-bottom-right-radius: 20px;
+}
+.calculator span.zero{
+    border-bottom-left-radius: 20px;
+}
+.calculator input.value{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
